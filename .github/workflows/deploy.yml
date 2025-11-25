@@ -33,6 +33,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
+          VITE_BASE_PATH: "/"
 
       - name: Add CNAME for custom domain
         run: echo "doorwise.in" > dist/CNAME
